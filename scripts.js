@@ -50,7 +50,7 @@ function addTasks() {
 }
 // Function to display all tasks
 function showTasks() {
-const allTasks= [
+  const allTasks= [
 
   {id: 1, title: 'Gym', description: 'Work those muscles', status: 'todo' },
   {id: 2, title: 'Study', description: 'Work those brains', status: 'doing' },
