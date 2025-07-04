@@ -84,9 +84,17 @@ const allTasks= [
   {id: 5, title: 'Work on JSL03', description: 'Read the brief and user stories...', status: 'todo' },
   {id: 6, title: 'Revise Javascript concepts', description: 'Practise JS concepts...', status: 'doing' },
 ];
-//Filter only completed tasks
-const completedTasks = allTasks.filter(task => task.status === 'done');
-
-//Print both arrays
-console.log("All tasks:", allTasks);
-console.log("Completed tasks:", completedTasks);
+}
+// Function to show completed tasks
+function showCompleted() {
+  let completed = tasks.filter((task) => task.status === "done"); // Get tasks that are "done"
+  if (completed.length) {
+    console.log("Completed Tasks:", completed);
+  } else {
+    console.log("No tasks completed, let's get to work!");
+  }
+}
+// Example usage - runs functions in order
+showTasks();
+addTasks(); // Adds three new tasks
+showCompleted();
