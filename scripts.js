@@ -72,9 +72,38 @@ const initialTasks = [
       "Gain practical experience and collaborate with others in the software development community",
     status: "done",
   },
-]
-// All tasks
-
+];
+// Function to get a valid status input from the user
+function getValidStatus() {
+  let status = prompt("Enter status (todo, doing, done):").toLowerCase();
+   // Convert input to lowercase
+  while (!["todo", "doing", "done"].includes(status)) {
+    // Check if input is valid
+    status = prompt("Invalid! Enter status (todo, doing, done):").toLowerCase();
+  }
+  return status; // Return correct status
+}
+// Function to add three new tasks
+function addTasks() {
+  for (let i = 0; i < 3; i++) {
+    // Loop runs three times
+    if (tasks.length >= 6) {
+      // Max six tasks allowed
+      alert("There are enough tasks on your board, check the console.");
+      return; // Stop adding more tasks
+    }
+    // Ask user for task details
+    let title = prompt(`Task ${tasks.length + 1} title?`);
+    let description = prompt(`Task ${tasks.length + 1} description?`);
+    let status = getValidStatus()
+    // Add new task to list
+    tasks.push({ id: tasks.length + 1, title, description, status });
+    // Show new task in console
+    console.log("New task added:", tasks[tasks.length - 1]);
+  }
+}
+// Function to display all tasks
+function showTasks() {
 const allTasks= [
 
   {id: 1, title: 'Gym', description: 'Work those muscles', status: 'todo' },
