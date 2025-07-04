@@ -72,4 +72,21 @@ const initialTasks = [
       "Gain practical experience and collaborate with others in the software development community",
     status: "done",
   },
+]
+// All tasks
+
+const allTasks= [
+
+  {id: 1, title: 'Gym', description: 'Work those muscles', status: 'todo' },
+  {id: 2, title: 'Study', description: 'Work those brains', status: 'doing' },
+  {id: 3, title: 'Sleep', description: 'Rest that bod', status: 'done' },
+  {id: 4, title: 'Correct JSL02', description: 'Make corrections to JSL02 before attempting to JSL03', status: 'done' },
+  {id: 5, title: 'Work on JSL03', description: 'Read the brief and user stories...', status: 'todo' },
+  {id: 6, title: 'Revise Javascript concepts', description: 'Practise JS concepts...', status: 'doing' },
 ];
+//Filter only completed tasks
+const completedTasks = allTasks.filter(task => task.status === 'done');
+
+//Print both arrays
+console.log("All tasks:", allTasks);
+console.log("Completed tasks:", completedTasks);
