@@ -68,8 +68,7 @@ const initialTasks = [
   {
     id: 3,
     title: "Contribute to Open Source Projects",
-    description:
-      "Gain practical experience and collaborate with others in the software development community",
+    description: "Gain practical experience",
     status: "done",
   },
 ];
