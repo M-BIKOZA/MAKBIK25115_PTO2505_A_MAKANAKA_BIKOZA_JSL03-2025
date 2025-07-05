@@ -1,7 +1,5 @@
 # JSL03 Project Brief: Console-Based Task Manager
 
-## Important Prerequisite
-
 1. Before I started with this challenge, I had to make sure that my JSL02 was on point since it is a built on project, just adding more javascript arrays to the code. 
 2. I forked the repository from Github.
 
