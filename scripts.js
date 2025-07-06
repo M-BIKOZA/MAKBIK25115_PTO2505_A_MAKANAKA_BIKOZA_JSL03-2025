@@ -59,6 +59,5 @@ function showCompleted() {
 console.log('All Tasks:');
 console.log(tasks)
 // Example usage - runs functions in order
-showTasks();
 addTasks(); // Adds three new tasks
 showCompleted();
